@@ -1,1 +1,207 @@
 /*# sourceMappingURL=estilo.css.map */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+:root{
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Moderateviolet2: hsla(264, 63%, 66%, 0.904);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+    --paragraph: hsl(202, 5%, 68%);
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    min-height: 100vh;
+    background-color: var(--Lightgrayishblue);
+}
+
+.card{
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    gap: 1.5rem;
+}
+.card__content{
+    padding: 1.5rem 1.85rem;
+    border-radius: 0.6rem;
+    filter: drop-shadow(3px 4px 6px rgba(128, 128, 128, 0.562));
+}
+.card__user{
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+}
+.card__img{
+    margin: 0;
+}
+.card__img img{
+    border-radius: 50%;
+    width: 40px;
+}
+.card__img--violet img{ 
+    border: 2px solid var(--Moderateviolet2);
+}
+.card__info{
+    margin: 0;
+    line-height: 1.3;
+}
+.card__name{
+    margin-bottom: 0;
+    font-size: 0.95em;
+    color: var(--Lightgrayishblue);
+    font-weight: 700;
+}
+.card__status{
+    margin-top: 0;
+    font-size: 0.76em;
+    color: var(--Lightgray);
+    opacity: 0.7;
+}
+
+
+.card__violet{
+    background-color: var(--Moderateviolet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 33% 23.5%;
+    /* background-size: 15% 50%; */
+    background-position:205px top;
+}
+.card__gray{
+    background-color: var(--Verydarkgrayishblue);
+}
+.card__white{
+    background-color: var(--White);
+}
+.card__blue{
+    background-color: var(--Verydarkblackishblue);
+}
+
+.card__name--dark{
+    color: var(--Verydarkblackishblue);
+}
+
+.card__title{
+    color: var(--Lightgrayishblue);
+    font-size: 1.33em;
+    line-height: 1.4;
+    margin-top: 0rem;
+}
+.card__title--dark{
+    color: var(--Verydarkblackishblue);
+}
+
+.card__description{
+    font-size:0.866em;
+    color: var(--Lightgray);
+    opacity: 70%;
+    line-height: 1.5;
+}
+.card__description--gray{
+    opacity: 1;
+    color: var(--paragraph);
+}
+.card__description--violet{
+    font-size: 0.91em;
+}
+@media (min-width: 48rem) {
+    .card__violet{
+        background-size: 15% 35%;
+        background-position:405px top;
+    }
+}
+
+@media (min-width: 64rem) {
+    body{
+        height: 100vh;
+    }
+    .card__violet{
+        background-size: 25% 35%;
+        background-position:275px top;
+    }
+    main{
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    .card{
+        width: 92%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .card__violet{
+        grid-column: 1/3;
+    
+    }
+    .card__gray{
+        grid-column: 3/4;
+    }
+    .kira{
+        grid-column:4/5;
+        grid-row: 1/3;
+    }
+    .card__blue{
+        grid-column: 2/4;
+    }
+    .harmon{
+        grid-column:1/2;
+    }
+    .card__description--violet{
+        font-size: 0.866em;
+    }
+    .card__title{
+        font-size: 1.32em;
+    }
+
+}
+@media (min-width: 80rem) {
+    .card__violet{
+        background-size: 21% 38%;
+        background-position:370px top;
+    }
+    .card{
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    .harmon__title{
+        font-size: 1.33rem;
+    }
+}
+@media (min-width: 90rem) {
+    .card{
+        width: 79%;
+    }
+    .card__title{
+        margin: 0.6rem 0;
+    }
+    
+    .kira__desc{
+        margin: 1.6rem 0 0 0;
+    }
+    
+}
+
+@media(min-width:120rem){
+    .card{
+        width:59%;
+    }
+   
+}
+@media(min-width:150rem){
+    .card{
+        width:44%;
+    }
+    .harmon__title{
+        font-size: 1.36rem;
+    }
+}
