@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 55%;
+}
+
+#posts {
+  overflow-y: auto;
+  max-height: 300px; /* Adjust the maximum height as desired */
+}
+
+#posts div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+#posts p {
+  margin: 0;
+}
+
+.options {
+  display: inline-block;
+}
+
+.options i {
+  margin-right: 5px;
+  cursor: pointer;
+}

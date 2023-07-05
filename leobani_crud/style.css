@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 55%;
+}
+
+#posts {
+  overflow-y: auto;
+  max-height: 300px; /* Adjust the maximum height as desired */
+}
+
+#posts div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  background-color: #f5f5f5;
+}
+
+#posts p {
+  margin: 0;
+  color: #333;
+}
+
+.options {
+  display: inline-block;
+}
+
+.options i {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #888;
+}
+
+.left form {
+  margin-bottom: 20px;
+}
+
+.left textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.left button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.left button:hover {
+  background-color: #0069d9;
+}
+
+.msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.right h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.right #posts::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right #posts::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+.right #posts::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+.right #posts::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
